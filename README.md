@@ -1,10 +1,12 @@
 # The Inner Workings of Floats
 
-When looking at how C++ represents integers under-the-hood, it's rather self-explanitory on how it all works, since it's just the number in base-2. Floats, on the other hand, are a bit trickier to understand right away. In this section we will go over what makes a float tick, why the implementation was chosen, and the downsides of floats. 
+When looking at how C++ represents integers under-the-hood, it's rather self-explanitory on how it all works, since it's just the number in base-2. Floats, on the other hand, are a bit trickier to understand right away, and can cause some confusing and dangerous bugs if used incorrectly. 
 
 TODO:  
-Possible addition to intro talking about famous floating-point errors.  
+Addition to intro talking about famous floating-point errors.  
 http://fas.org/spp/starwars/gao/im92026.htm
+
+In this section we will go over what makes a float tick, why the implementation was chosen, and the downsides of floats. 
 
 ## What are they?
 
