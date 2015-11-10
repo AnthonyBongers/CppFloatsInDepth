@@ -159,10 +159,7 @@ This is easily explained with an example, so let's take a look at converting two
 
 **Example 1**
 
-TODO:  
-Flesh out example.
-
-1.65625
+Let's look at how to convert the decimal number 1.65625 into decimal. First off, when converting the fraction, we can ignore the data to the left of the radix point. Now let's apply the method that I mentioned above:
 
 Equation | Result | Binary
 --- | --- | ---
@@ -171,6 +168,14 @@ Equation | Result | Binary
 0.625 * 2 | 1.25 | 1
 0.25 * 2 | 0.5 | 0
 0.5 * 2 | 1.0 | 1
+
+Once we get to the number 1.0, the fraction is done, since 0.0 * 2 is 0.0, which will go on forever. Now that we have the binary fraction, we can put the data to the left of the radix point back in. Since the data in this example was a 1, and there is already an implicit 1 in the mantissa, we don't have to change anything.
+
+```
+Sign: 0
+Exponent: 127 - 0 = 127
+Mantissa: 101010000000000000000000000000
+```
 
 **Example 2**
 
