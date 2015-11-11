@@ -1,4 +1,4 @@
-# The Inner Workings of Floats
+# Floats In Depth
 
 When looking at how C++ represents integers under-the-hood, it's rather self-explanitory on how it all works, since it's just the number in base-2. Floats, on the other hand, are a bit trickier to understand right away, and can cause some confusing and dangerous bugs if used incorrectly. 
 
