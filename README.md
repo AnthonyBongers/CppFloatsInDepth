@@ -285,6 +285,10 @@ As you can see, the extra 29 bits in the mantissa of the double-precision floati
 
 ## Floating-Point Range
 
+The range of a floating-point value can be broken up into two sections: the range of positive normalized and denormalized values, and the range of negative normalized and denormalized values. If a positive or negative value ever becomes to small to be represented, a quiet exception is thrown for an underflow. Likewise, if a positive or negative value ever becomes too large to be represented by a floating-point value, it will throw a quiet exception for an overflow, and become ±Infinity. 
+
+Here are the range values for a single-precision floating-point value:
+
 ```
 Largest positive number:
 Normalized
@@ -307,21 +311,29 @@ Normalized
 -3.4028235E38
 ```
 
-TODO:  
-The range of a floating point number can be split up into:  
-Normalized numbers: no precision is lost  
-Denormalized numbers: precision is lost?
+And here are the range values for a double-precision floating-point value:
 
-There are 5 ranges single precision floats can't represent:
+```
+Largest positive number:
+Normalized
+0 11111111110 1111111111111111111111111111111111111111111111111111
+1.79769E308
 
-* Negative numbers less than -(2-2-23) × 2127 (negative overflow)
-* Negative numbers greater than -2-149 (negative underflow)
-* Zero
-* Positive numbers less than 2-149 (positive underflow)
-* Positive numbers greater than (2-2-23) × 2127 (positive overflow)
+Smallest positive number:
+Denormalized
+0 00000000000 0000000000000000000000000000000000000000000000000001
+4.94066E324
 
-Overflow means the same as it does for integers, the number has grown too large to be represented.  
-Underflow is less serious. Means a loss of precision.
+Largest negative number:
+Denormalized
+1 00000000000 0000000000000000000000000000000000000000000000000001
+-4.94066E324
+
+Smallest negative number:
+Normalized
+1 11111111110 1111111111111111111111111111111111111111111111111111
+-1.79769E308
+```
 
 ## Special Values
 
