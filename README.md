@@ -36,7 +36,7 @@ The 'Sign' component takes up the first bit of the value, and determines whether
 
 ### Exponent
 
-The values exponent is the next component, and takes up 8 bits on a single precision (11 bits on the double precision). The exponent of the floating-point has a base of 2. 
+The exponent is the next component (sweet rhyme), and takes up 8 bits on a single precision value (11 bits on the double precision). The exponent of a floating-point value has a base of 2. 
 
 ```
 1.001 * 2 ^ 100
@@ -68,7 +68,7 @@ In the later section "Special Values", we will look into a few reserved values o
 
 ### Mantissa
 
-The mantissa (sometimes reffered to as the significand), represents the fractional component of the floating-point value. 
+The mantissa (sometimes referred to as the significand), represents the fractional component of the floating-point value. 
 
 ```
 5.00 * 2 ^ 10
@@ -76,7 +76,7 @@ The mantissa (sometimes reffered to as the significand), represents the fraction
 Mantissa
 ```
 
-It is typically stored in what is called 'normalized form', meaning the decimal place is put immediately after the first non-zero number. However, since the mantissa is in binary, the first non-zero number will always be a 1, so we can implicitly have it there without it taking any space. This technically gives us 24 bits of precision instead of 23 bits!
+It is typically stored in what is called 'normalized form', meaning the decimal place is put immediately after the first non-zero number. However, since the mantissa is in binary, the first non-zero number will always be a 1, so we can implicitly have it there without it taking any space. This technically gives us 24 bits of precision while only using 23 bits!
 
 ## Working With Binary Fractions in the Mantissa
 
