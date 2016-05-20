@@ -155,7 +155,7 @@ Converting a decimal fraction into a binary mantissa is easy, though a bit tedio
 
 What you'll do after is continually multiply the value by 2, and each time the fractional data overflows into the left of the radix point, that will result in a 1 for the binary fraction.
 
-This is easily explained with an example, so let's take a look at converting two numbers into binary.
+This is easily explained with an example, so let's take a look at converting two numbers into binary. Feel free to try out the [Float Inspector](./FloatInspector.cpp) to verify these values and try out a few of your own!
 
 **Example 1**
 
