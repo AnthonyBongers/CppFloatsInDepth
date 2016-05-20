@@ -18,7 +18,7 @@ int main()
 }
 
 // Example Output:
-// Input: f = 1.1f;
 //
+// Input: 1.1
 // | + | exponent |        mantissa         |
 // | 0 | 01111111 | 00011001100110011001101 |
