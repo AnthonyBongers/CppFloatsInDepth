@@ -25,7 +25,7 @@ This implementation allows for a huge range in numbers, and can change precision
 
 Floating point numbers come in two sizes: The single precision float (which is 32 bits), and the double precision float (which is 64 bits). Let's look at how these look in memory, and what each section of memory does:
 
-   | Sign | Exponent | Mantissa | Total
+ Type  | Sign | Exponent | Mantissa | Total
 --- | --- | --- | --- | ---
 Single Precision | 1 bit | 8 bits | 23 bits | 32 bits total
 Double Precision | 1 bit | 11 bits | 52 bits | 64 bits total
